@@ -16,13 +16,5 @@ public class PontoCartesiano {
     public double getX(){ return x;}
     public double getY(){ return y;}
 
-    public double distanciaEuclidiana (PontoCartesiano pontoB){
-        
-        double xBxA = pontoB.getX() - x;
-        double yByA = pontoB.getY() - y;
 
-        double distancia = Math.sqrt(Math.pow(xBxA, 2) + Math.pow(yByA, 2));
-        return distancia;
-
-    }
 }

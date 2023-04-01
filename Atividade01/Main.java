@@ -1,4 +1,5 @@
 package Atividade01;
+import Atividade01.*;
 
 public class Main {
     
@@ -6,8 +7,8 @@ public class Main {
 
         PontoCartesiano pontoA = new PontoCartesiano(2,5);
         PontoCartesiano pontoB = new PontoCartesiano(2, 6);
-
-        System.out.println("Distancia = " + pontoA.distanciaEuclidiana(pontoB));
+        PlanoCartesiano plano = new PlanoCartesiano(pontoA,pontoB);
+        
         
     }
 }
