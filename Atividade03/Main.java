@@ -14,9 +14,7 @@ public class Main {
         vetor.Adiciona(a2);
         vetor.Adiciona(a3);
         vetor.Adiciona(a4);
-        //vetor.Adiciona(a5);
 
-        System.out.print(vetor.Tamanho());
         System.out.print(vetor.Contem(a4));
 
 

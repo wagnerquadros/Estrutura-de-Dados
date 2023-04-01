@@ -6,7 +6,15 @@ public class Vetor {
     public Vetor(){
     }
 
+    public Vetor(int i){
+        alunos = new Aluno [i];
+    }
+
     public void Adiciona(Aluno aluno){
+        if (nextIndex == alunos.length){
+            return;
+        }
+
         alunos[nextIndex] = aluno;
         nextIndex++;
     }
@@ -16,14 +24,13 @@ public class Vetor {
     }
 
     public boolean Contem(Aluno aluno){
-        boolean contem = false;
         for (int i = 0; i<nextIndex; i++){
-            if (alunos[i].equals(aluno)){
-                contem = true;
+            if (alunos[i].getNome() == aluno.getNome()){
+                return true;
             }
 
         }
-        return contem;
+        return false;
     }
 
     
