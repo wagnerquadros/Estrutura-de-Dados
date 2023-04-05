@@ -15,7 +15,7 @@ public class Vetor implements Ivetor {
             alunos[nextIndex] = aluno;
             nextIndex++;
         } else {
-            System.out.print("Vetor Cheio");
+            System.out.println("Vetor Cheio");
         }
 
 
