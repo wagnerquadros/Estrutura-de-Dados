@@ -1,4 +1,4 @@
-public class Aluno {
+public class Aluno extends Object{
     
     private String nome;
     private int idade;

@@ -4,5 +4,6 @@ public interface Ivetor {
     public boolean Contem(Aluno aluno);
     public int Tamanho();
     public boolean Cheio();
+    public boolean Remove(Aluno aluno);
 
 }
