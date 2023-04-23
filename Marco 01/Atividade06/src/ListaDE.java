@@ -11,11 +11,27 @@ public class ListaDE implements Lista {
     }
 
     public void insereInicio(int info) {
-        
+        Noh novo = new Noh(info);
+        if (inicio == null) {
+            inicio = novo;
+            fim = novo;
+        } else {
+            novo.setProximo(inicio);
+            inicio.setAnterior(novo);
+            inicio = novo;
+        }
     }
 
     public void insereFim(int info) {
-
+        Noh novo = new Noh(info);
+        if (inicio == null) {
+            inicio = novo;
+            fim = novo;
+        } else {
+            novo.setAnterior(fim);
+            fim.setProximo(novo);
+            fim = novo;
+        }
     }
 
     @Override
@@ -32,5 +48,4 @@ public class ListaDE implements Lista {
     public int tamanho() {
         return 0;
     }
-    
 }

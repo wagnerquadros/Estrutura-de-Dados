@@ -36,10 +36,12 @@ public class App {
 
         Aluno a1 = new Aluno("Zé", 20 , 10);
         Professor p1 = new Professor("Mestre","mestre@gmail");
+        Professor p2 = new Professor("Mestre2","mestre@gmail2");
 
         ListaObjetos lo = new ListaObjetos();
         lo.insereInicio(a1);
         lo.insereInicio(p1);
+        lo.insereFim(p2);
 
         System.out.println();
         System.out.println();
