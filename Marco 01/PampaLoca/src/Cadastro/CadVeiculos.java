@@ -7,5 +7,6 @@ public class CadVeiculos {
     
     ListaObjetos veiculos = new ListaObjetos();
     Arquivo arquivo = new Arquivo();
-    arquivo.setVeiculos(veiculos);
+
+
 }
