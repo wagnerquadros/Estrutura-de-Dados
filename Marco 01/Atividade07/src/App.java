@@ -1,59 +1,34 @@
-import Objetos.Aluno;
-import Objetos.Professor;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
         
-        ListaSE l = new ListaSE();
-        l.insereInicio(10);
-        l.insereInicio(5);
-        l.insereFim(8);
-        l.insereFim(22);
-        l.insereInicio(99);
-        l.insereInicio(65);
-        l.remove(5);
-    
-        l.imprimirLista();
 
-        l.remove(1111);
+        Vetor vetor = new Vetor();
+        int[] vatorAleatorio = vetor.gerarNumerosAleatorios();
 
-        System.out.println(l.contemInfo(13123));
-        System.out.println(l.contemInfo(8));
-        System.out.println(l.estahVazia());
+        long inicioRec = System.nanoTime(); 
+        System.out.println("Recursão - Valor máximo: " + vetor.maximoRecusao(vatorAleatorio, 0, vatorAleatorio.length-1));
+        long fimRec = System.nanoTime();
+        System.out.println("Tempo de execução (nanosegundos): " + (fimRec - inicioRec));
 
-        ListaSE l2 = new ListaSE();
-        System.out.println(l2.estahVazia());
+        System.out.println("");
 
-        l2.insereFim(1);
-        System.out.println(l2.estahVazia());
-        System.out.println(l.tamanho());
-
-        l.insereInicio(99);
-        l.insereInicio(65);
-        System.out.println(l.tamanho());
-
-
-
-        Aluno a1 = new Aluno("Zé", 20 , 10);
-        Professor p1 = new Professor("Mestre","mestre@gmail");
-        Professor p2 = new Professor("Mestre2","mestre@gmail2");
-
-        ListaObjetos lo = new ListaObjetos();
-        lo.insereInicio(a1);
-        lo.insereInicio(p1);
-        lo.insereFim(p2);
-
-        System.out.println();
-        System.out.println();
-        System.out.println(lo.estahVazia());
-        System.out.println(lo.tamanho());
-        lo.remove(a1);
-        System.out.println();
-        System.out.println(lo.tamanho());
-
-
+        long inicioIte = System.nanoTime(); 
+        System.out.println("Iteração - Valor máximo: " + vetor.maximoRecusao(vatorAleatorio, 0, vatorAleatorio.length-1));
+        long fimIte = System.nanoTime();
+        System.out.println("Tempo de execução (nanosegundos): " + (fimIte - inicioIte));
 
 
 
     }
 }
+
+
+/*
+ * Utilize o TAD Vetor e implemente um método recursivo para encontrar
+ *  o maior elemento. Implemente um método iterativo para esse fim também. 
+ * Utilize algum método de cômputo de tempo para registrar o tempo de 
+ * execução de cada um desses métodos para um vetor com 1000 números 
+ * inteiros aleatórios. 
+ */
