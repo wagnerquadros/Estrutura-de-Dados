@@ -76,13 +76,13 @@ public class ListaDE {
             while(aux != null && aux.getInfo() < info){
                 aux = aux.getProximo();
             }
-            insereNoMeio(info, novo);
+            insereNaOrdemCrescente(info, novo);
         }
 
         return 0;
     }
 
-    public void insereNoMeio(int info, Noh novo){
+    public void insereNaOrdemCrescente(int info, Noh novo){
         Noh aux = inicio;
 
         while(aux != null && aux.getInfo() < info){
