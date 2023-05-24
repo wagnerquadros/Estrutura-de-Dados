@@ -1,1 +1,0 @@
-Resposta: D, B, C , A
