@@ -18,14 +18,24 @@ public class PilhaVet implements IPilha{
             System.out.println("Pilha estourou");
             return false;
         } 
-        pilha[this.numElem] = info;
+        pilha[numElem] = info;
         numElem++;
         return true;
     }
 
 
     public Object pop() {
-        return null;
+        Object o = null;
+        if(estahVazia()){
+            System.out.println("Pilha vazia");
+            return null;
+        }
+        o = pilha[numElem - 1];
+        pilha[numElem - 1] = null;
+        numElem--;
+        System.out.println("esgsh");
+        return o;
+
     }
 
  
@@ -35,7 +45,7 @@ public class PilhaVet implements IPilha{
 
   
     public boolean estahVazia() {
-        if(pilha == null)
+        if(numElem == 0)
             return true;
         return false;
     }

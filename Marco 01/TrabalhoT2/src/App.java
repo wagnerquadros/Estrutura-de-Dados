@@ -5,7 +5,11 @@ import Pilha.PilhaVet;
 public class App {
     public static void main(String[] args) throws Exception {
         
-        PilhaVet p = new PilhaVet(10);
-        p.push(10);
+
+        Aluno a = new Aluno("W", 0, 0);
+        PilhaVet p = new PilhaVet(1);
+        p.push(a);
+        p.pop();
+        p.pop();
     }
 }
