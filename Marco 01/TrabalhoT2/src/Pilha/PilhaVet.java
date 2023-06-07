@@ -13,7 +13,6 @@ public class PilhaVet implements IPilha{
     }
 
     public boolean push(Object info) {
-
         if( numElem == pilha.length){
             System.out.println("Pilha estourou");
             return false;
@@ -22,7 +21,6 @@ public class PilhaVet implements IPilha{
         numElem++;
         return true;
     }
-
 
     public Object pop() {
         Object o = null;
@@ -33,26 +31,30 @@ public class PilhaVet implements IPilha{
         o = pilha[numElem - 1];
         pilha[numElem - 1] = null;
         numElem--;
-        System.out.println("esgsh");
         return o;
 
     }
 
- 
     public Object top() {
-        return null;
+        return pilha[numElem-1];
     }
 
-  
     public boolean estahVazia() {
         if(numElem == 0)
             return true;
         return false;
     }
 
-  
     public int tamanho() {
         return numElem;
     }
+
+    public void imprimirPilhaVet(){
+        for(int i = numElem - 1; i >= 0; i--){
+            System.out.println(pilha[i]);
+        }
+    }
+
+
     
 }
