@@ -1,7 +1,9 @@
 import javax.print.event.PrintJobListener;
 
 import Fila.FilaLista;
+import Mapas.MapaHashVetor;
 import Objetos.Aluno;
+import Objetos.Estudante;
 import Pilha.PilhaLista;
 import Pilha.PilhaVet;
 
@@ -37,8 +39,8 @@ public class App {
         
         PilhaLista pilhaInvertida = new PilhaLista();
         pilhaInvertida = pilhaAlunos.inverterPilha(pilhaAlunos);
-
         pilhaInvertida.imprimirPilhaLista();
+
 
     }
 }
