@@ -89,7 +89,7 @@ public class MapaHashVetor {
         for (int i = 0; i < vetor.length; i++){
     
             while(sondagem < vetor.length){
-                hash = (hash(vetor[i].getMatricula()) + sondagem) % vetor.length;
+                hash = (hash(vetor[i].getMatricula()) + sondagem) % novoVetor.length;
          
                 if (novoVetor[hash] == null){
                     novoVetor[hash] = vetor[i];

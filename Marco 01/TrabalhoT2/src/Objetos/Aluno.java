@@ -11,8 +11,6 @@ public class Aluno {
         this.nota = nota;
     }
 
-
-
     public String getNome() {return nome;}
     public int getIdade() {return idade;}
     public int getNota() {return nota;}

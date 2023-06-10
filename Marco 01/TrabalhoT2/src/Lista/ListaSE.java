@@ -2,14 +2,14 @@ package Lista;
 import Fila.Noh;
 import Interface.IListaObject;
 
-public class ListaObjetos implements IListaObject {
+public class ListaSE implements IListaObject {
 
     private Noh inicio;
     private Noh fim;
 
-    public ListaObjetos(){
-            this.inicio = null;
-            this.fim = null;
+    public ListaSE(){
+        this.inicio = null;
+        this.fim = null;
     }
 
 
@@ -81,5 +81,9 @@ public class ListaObjetos implements IListaObject {
             }
         } 
         return tamanho;
+    }
+
+    public Noh getInicio(){
+        return inicio;
     }
 }
