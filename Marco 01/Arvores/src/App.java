@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-        
+        ///////////////////////////////////////////////
         ABB abb = new ABB();
 
         abb.adicionar(20);
@@ -27,5 +27,24 @@ public class App {
         
         System.out.println("");
         abb.preOrdem();
+
+        
+        System.out.println("============================================");
+        //////////////////////////////////////////////////////
+
+
+        AVL avl = new AVL();
+        avl.adicionar(51, avl.getRaiz());
+        avl.adicionar(57, avl.getRaiz());
+        avl.adicionar(98, avl.getRaiz());
+        avl.adicionar(19, avl.getRaiz());
+        avl.adicionar(11, avl.getRaiz());
+        avl.adicionar(45, avl.getRaiz());
+        avl.adicionar(79, avl.getRaiz());
+
+        avl.preOrdem();
+
+        System.out.println(avl.estahBalanceada(avl.getRaiz()));
+
     }
 }
