@@ -13,8 +13,19 @@ public class App {
         abb.adicionar(10);
         abb.adicionar(15);
 
-        abb.imprimirArvore();
+        
+        System.out.println("");
+        abb.emOrdem();
+        System.out.println("");
+        abb.preOrdem();
+        System.out.println("");
+        abb.posOrdem();
 
-        System.out.println(abb.buscar(10));
+        System.out.println("");
+        abb.preOrdem();
+        abb.removeNoh(1);
+        
+        System.out.println("");
+        abb.preOrdem();
     }
 }
